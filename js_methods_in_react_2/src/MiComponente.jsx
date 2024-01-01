@@ -1,4 +1,5 @@
 import React from 'react'
+import "./App.css"
 
 const MiComponente = ({reyes}) => {
     
@@ -7,7 +8,7 @@ const MiComponente = ({reyes}) => {
         e.target.parentNode.remove()
     }
     
-    const resultado = reyes.filter(e=>!e.nombre.includes("g")).map(e =><div key={e.nombre}>{e.nombre}<button onClick={borrar}>borrar</button></div>)
+    const resultado = reyes.filter(e=>!e.nombre.includes("g")).map(e =><div className='caja' key={e.nombre}>{e.nombre}<button onClick={borrar}>borrar</button></div>)
 
    
   return (

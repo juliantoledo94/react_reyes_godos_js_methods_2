@@ -37,7 +37,10 @@ const App = () => {
 
   return (
     <>
-      <MiComponente reyes={reyes}></MiComponente>
+      <div className='contenedorComponente'>
+        <MiComponente reyes={reyes}></MiComponente>
+      </div>
+      
     </>
   )
 }
